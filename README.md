@@ -1,1 +1,136 @@
-Initializing
+# Repolex Knowledge Graph of PennyLaneAI/pennylane-cirq
+
+RDF knowledge graph data for [PennyLaneAI/pennylane-cirq](https://github.com/PennyLaneAI/pennylane-cirq), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download PennyLaneAI/pennylane-cirq
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 17b70f409862b4c017be0748cd64ddc20f646836
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 17b70f409862b4c017be0748cd64ddc20f646836
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 00ab5217eeb1aafd3539f4d8fe9426c7c0150e4c.nq.gz
+│   ├── 03d0bb41343d40d1b384d3b0025f2502eeedf7ad.nq.gz
+│   ├── 09e13c752c175017d15a907bc8dbe5a5b4cfe4b7.nq.gz
+│   ├── 0b78f5d73602fc73e550a63a5c9a03a2f0d9add0.nq.gz
+│   ├── 0bd849a540e6897b3227b7e42e34e593d8f434a5.nq.gz
+│   ├── 10bd335a4522daf891e05f12f05910ad58a69d91.nq.gz
+│   ├── 118735a237135335691a6cfd1f7eb2943d73fbf4.nq.gz
+│   ├── 18732a2c3cd3bc0e8a37f35e3dbe553295d78260.nq.gz
+│   ├── 1c865de7fe2e57307e1a9ec299d0f371c219889d.nq.gz
+│   ├── 203d628079d902073fee16469adae3a975c6b1c8.nq.gz
+│   ├── 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64.nq.gz
+│   ├── 2ad508a2b3acb619d064608d6fee05eb9ff1ce18.nq.gz
+│   ├── 41017fc1866278e416ad4b5f0c9fc70ddc3002d1.nq.gz
+│   ├── 47be9ee08ea51087b9b52487a16bd3041862cb6f.nq.gz
+│   ├── 4aeb3b19b720cfc1876a28590cb6cc667df261e7.nq.gz
+│   ├── 4b3db985162e82bba439f50a4d193aa8d743bb20.nq.gz
+│   ├── 4b4b9088a2dd29d2644afbc283704a61a8230e85.nq.gz
+│   ├── 4dd387af39dcc2060834be27545ef58063408807.nq.gz
+│   ├── 54ec09ae5274e4ff2301d27db68e6e20cd98993d.nq.gz
+│   ├── 5f62a10b711caa119d8202e8d9a47d69439f988a.nq.gz
+│   ├── 62962101d36d0c8170d7623d9ff38c47d5e18be5.nq.gz
+│   ├── 64962613aab21f45232f5b002365d5908828dd00.nq.gz
+│   ├── 6f9e005b8c172b734d433f5eb753ec45a8206de5.nq.gz
+│   ├── 734dc40efffbdeae9dd2e9f1856ec4d32812535f.nq.gz
+│   ├── 79433344d48b4dec31dd3ec68fce92a3538e5cb1.nq.gz
+│   ├── 7cce4cd9f053002557a2c791b1e757647dc90fba.nq.gz
+│   ├── 8597f7089bbe5095ab87a8032ddc7d1d8e7ed65f.nq.gz
+│   ├── 8670657a25ad692830c7369180473d7bb6ad9d1d.nq.gz
+│   ├── 88d33e678caa5e3b8050618137321f386ed93b2e.nq.gz
+│   ├── 8d0db21907e4ad8f5c17c631a5bfe6e765cbbae3.nq.gz
+│   ├── 931ebc0bca55c417e2ee1727fe6273f932c7787a.nq.gz
+│   ├── 957658bdef690a4ce7452aa96bdfdfdcdb55bae5.nq.gz
+│   ├── 9c57436f774b5bedb737b5e8cad830725169ccbf.nq.gz
+│   ├── a27e4ea46d67d7beb571b9c477f7aaee5d50c974.nq.gz
+│   ├── a383328c44498a9191071be192c76610cfdb7438.nq.gz
+│   ├── a5a196ef33c18af179f0e7276046c77dbf582b19.nq.gz
+│   ├── a65fc5791aee1740d3b96fff961aa0f6abae3ef1.nq.gz
+│   ├── afe9ec8095a597427e4303f4ca14a2661be71467.nq.gz
+│   ├── b326d3462870ed1c7cc12162dfe0747bee319a73.nq.gz
+│   ├── bf2ccfb26ab4e6ec75a89d5d18514fa838ad44a5.nq.gz
+│   ├── c1abf5ce880a2cf740a44abc033326098d8524f3.nq.gz
+│   ├── c512c9e0177472184d109ecd969571be623aa1c6.nq.gz
+│   ├── c7f002ea925d4723a67f32fabddda2e8648716e0.nq.gz
+│   ├── cf510d1b3ccda19d64692a87b998b1b0b134747a.nq.gz
+│   ├── d62cab9abbf4b135b8726ba3f6888449452c6e58.nq.gz
+│   ├── d9a259015802350bb2e9b9ea963b8b95cc1d61f8.nq.gz
+│   ├── db59bcd03d0983f4999226c08cb5ec0cdd2cc64c.nq.gz
+│   ├── e1000f7519daef7ccefc3d702b204b0a8b584db4.nq.gz
+│   ├── e2eab126f117c308c1b8d0f07a0328d42d8d7431.nq.gz
+│   ├── e90a2589ce388228d4a799ff559d2e09ad4c5dc4.nq.gz
+│   ├── ea6a6e505e62af4536e46663d83305ade8fac389.nq.gz
+│   ├── eb15206b2d15dfd060c23257d29763eac7aab414.nq.gz
+│   ├── f170db47949a26f408c347b974d1c5f68bc85942.nq.gz
+│   ├── f37398ced9a1457aa182ace571170324eb852745.nq.gz
+│   ├── f67bec815653a41d9d6bb7cda75b00f728640fe0.nq.gz
+│   ├── f7bb6ea356d2a563e6c3f57cc5468469a05819cc.nq.gz
+│   └── f81e299d489aea2efacf5851b1d9652ba148c1ef.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 17b70f409862b4c017be0748cd64ddc20f646836.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 65 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[PennyLaneAI/pennylane-cirq](https://github.com/PennyLaneAI/pennylane-cirq)
+
+---
+*Parsed on 2026-10-28 by [repolex](https://repolex.ai)*

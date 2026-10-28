@@ -1,0 +1,11 @@
+{
+  "org": "PennyLaneAI",
+  "repo": "pennylane-cirq",
+  "versions": [
+    {
+      "commit": "17b70f409862b4c017be0748cd64ddc20f646836",
+      "tag": "",
+      "parsed_at": "2026-10-28T18:43:39.276253+00:00"
+    }
+  ]
+}
