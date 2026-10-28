@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/PennyLaneAI/pennylane-cirq/commit/17b70f409862b4c017be0748cd64ddc20f646836",
       "git:hexsha": "17b70f409862b4c017be0748cd64ddc20f646836",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-10-28T18:43:39.275652+00:00"
     },
     {
       "@id": "https://repolex.ai/r/PennyLaneAI/pennylane-cirq/commit/a9164c46552fc936d9969efb6d6186eb341507d7",
